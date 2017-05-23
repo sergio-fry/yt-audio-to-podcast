@@ -4,7 +4,7 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 
 RUN apt-get update && apt-get install -y ffmpeg
 
-ENV REVISION 28029271ad
+ENV REVISION 1544a9ba22d0a65b5b3c251c7a9c88d1c37d93d0
 ENV REPO https://github.com/sergio-fry/yt-audio-to-podcast.git
 
 RUN mkdir /app
